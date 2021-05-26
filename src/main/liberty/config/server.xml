@@ -1,5 +1,5 @@
 <!--
-       Copyright 2020-2021 IBM Corp All Rights Reserved
+       Copyright 2021 IBM Corp All Rights Reserved
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
    limitations under the License.
 -->
 
-<server description="Broker server">
+<server description="BrokerQuery server">
     <featureManager>
         <feature>microProfile-4.0</feature>
         <feature>appSecurity-2.0</feature>
@@ -77,7 +77,7 @@
         webAlwaysLogin="true" preserveFullyQualifiedReferrerUrl="true" trackLoggedOutSSOCookies="true" ssoCookieName="StockTraderSSO"
         useOnlyCustomCookieName="true" ssoUseDomainFromURL="true"/>
 
-    <webApplication id="Broker" name="Broker" location="Broker.war" contextRoot="/broker">
+    <webApplication id="BrokerQuery" name="BrokerQuery" location="BrokerQuery.war" contextRoot="/broker-query">
         <classloader apiTypeVisibility="+third-party"/>
         <application-bnd>
             <security-role id="StockTrader" name="StockTrader">

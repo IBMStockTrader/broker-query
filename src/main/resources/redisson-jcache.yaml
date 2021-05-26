@@ -1,0 +1,7 @@
+singleServerConfig:
+    address: "rediss://d34473b0-c94c-4093-a1e1-edc05b3c8596.blijti4d0v0nkr55oei0.databases.appdomain.cloud:30487/0"
+    password: 7badbd73b0852e80ce7539dd457d3dde8f2b6e084f46a92cf92
+    sslKeystore: file:///config/resources/security/key.p12
+    sslKeystorePassword: St0ckTr@der
+    sslTruststore: file:///config/resources/security/trust.p12
+    sslTruststorePassword: St0ckTr@der

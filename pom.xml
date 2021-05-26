@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-       Copyright 2020-2021 IBM Corp All Rights Reserved
+       Copyright 2021 IBM Corp All Rights Reserved
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -20,11 +20,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.stocktrader</groupId>
-    <artifactId>broker</artifactId>
+    <artifactId>broker-query</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>StockTrader - broker</name>
+    <name>StockTrader - broker-query</name>
 
     <!-- Parent needed for MC to build properly -->
     <parent>
@@ -70,13 +70,21 @@
             <artifactId>slf4j-jdk14</artifactId>
             <version>1.7.30</version>
         </dependency>
-<!-- Enable this when moving to asynchronous interaction with downstream microservices
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.15.5</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
             <version>2.1.0</version>
         </dependency>
--->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

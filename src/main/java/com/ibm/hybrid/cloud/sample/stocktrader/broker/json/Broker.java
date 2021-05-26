@@ -16,6 +16,7 @@
 
 package com.ibm.hybrid.cloud.sample.stocktrader.broker.json;
 
+import java.io.Serializable;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.Iterator;
@@ -28,7 +29,7 @@ import javax.json.JsonObjectBuilder;
 
 
 /** JSON-B POJO class representing a Broker JSON object */
-public class Broker {
+public class Broker implements Serializable {
     private static String UNKNOWN_STRING = "Unknown";
     private static double UNKNOWN_DOUBLE = -1.0;
     private static int    UNKNOWN_INT    = -1;
